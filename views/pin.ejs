@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>PIN Form</title>
+
+<!-- Bootstrap CSS (CDN) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<div class="container py-4">
+    <form action="/user/pin" method="post" class="row g-3 align-items-center">
+    <div class="col-12 col-md-4">
+        <label for="email" class="form-label">Email</label>
+        <input id="email" name="email" type="email" class="form-control" placeholder="Enter registered Email" required>
+    </div>
+
+    <div class="col-12 col-md-2">
+        <label for="oldPin" class="form-label">Old PIN</label>
+        <input id="oldPin" name="oldPin" type="number" class="form-control" placeholder="1234">
+    </div>
+
+    <div class="col-12 col-md-2">
+        <label for="newPin" class="form-label">New PIN</label>
+        <input id="newPin" name="newPin" type="number" class="form-control" placeholder="New PIN">
+    </div>
+
+    <div class="col-12 col-md-4 d-flex align-items-end">
+        <button type="submit" class="btn btn-success w-100">Submit</button>
+    </div>
+    </form>
+</div>
+
+<!-- Bootstrap JS bundle (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
