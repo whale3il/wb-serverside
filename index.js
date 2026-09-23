@@ -28,9 +28,9 @@ app.set('view engine', 'ejs')
 // mongoose
         const mongoose = require('mongoose')
 
-        let URL = process.env.url
+        let url= process.env.url
         
-        mongoose.connect(URL)
+        mongoose.connect(url)
         try{
             console.log('Mongodb connected Successfully');
             
