@@ -28,9 +28,9 @@ app.set('view engine', 'ejs')
 // mongoose
         const mongoose = require('mongoose')
 
-        // let URL = process.env.url
+        let URL = process.env.url
         
-        mongoose.connect("mongodb+srv://whale:Olawale2021#@cluster0.tgpice1.mongodb.net/?appName=Cluster0")
+        mongoose.connect(URL)
         try{
             console.log('Mongodb connected Successfully');
             
